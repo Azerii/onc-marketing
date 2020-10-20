@@ -1,24 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Brands from './components/Brands';
+import Services from './components/Services';
+import OurWorks from './components/OurWorks';
+import Sectors from './components/Sectors';
+import Process from './components/Process';
+import Testimonial from './components/Testimonial';
+import ContactForm from './components/ContactForm';
+import TopCaption from './components/TopCaption';
+import Carousel from './components/Carousel';
+import Modal from './components/Modal';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Modal />
+      <TopCaption />
+      <Brands />
+      <Services />
+      <OurWorks />
+      <Sectors />
+      {/* <Carousel /> */}
+      <Process />
+      <Testimonial />
+      <ContactForm />
     </div>
   );
 }

@@ -1,0 +1,139 @@
+.modal-backdrop {
+    position: unset !important;
+}
+
+.modal-header {
+    border: none;
+    padding: 1rem;
+}
+
+.modal-dialog {
+    z-index: 1030 !important;
+    box-shadow: 0px 10px 25px #333333;
+}
+
+.modal-consultation-wrapper {
+
+}
+
+.consultation-header {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    padding: 1rem;
+    padding-bottom: 0rem;
+}
+
+.consultation-header img {
+    height: 3rem;
+    width: auto;
+}
+
+.modal-container {
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.modal-container .title h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    color: #333;
+    text-align: center;
+}
+
+.modal-container .form-group {
+    margin-bottom: 2rem;
+}
+
+.modal-container input, .modal-container textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #c9c9c9;
+    border-radius: 5px;
+}
+
+.consultation-btn-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.consultation-btn-wrapper button {
+    background-color: #59AC30;
+    font-size: 1.3rem;
+    border: none;
+    width: 100%;
+}
+
+.consultation-btn-wrapper button:focus, .consultation-btn-wrapper button:hover, .consultation-btn-wrapper button:active {
+    outline: none;
+    box-shadow: none;
+    filter: contrast(1.2);
+    background-color: #59AC30 !important;
+}
+
+.consultation-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 240, 245, 0.5);
+}
+
+.consultation-footer a {
+    color: #8d8d8d;
+}
+
+.consultation-footer-content-wrapper {
+    width: 80%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.consultation-footer-content-wrapper .consultation-footer-content p {
+    font-size: 1.3rem;
+    margin-bottom: 0;
+    color: #4f4f4f;
+}
+
+.choose-target-item {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.choose-target-item .checkbox {
+    width: 1rem;
+    margin-right: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .modal-consultation-wrapper img {
+        height: 2rem;
+    }
+    .modal-container {
+        width: 90%;
+        padding: 0.7rem;
+        margin-top: 0;
+    }
+    .modal-container .title h1 {
+        font-size: 1.3rem;
+    }
+    .consultation-footer-content-wrapper {
+        width: 90%;
+        height: 3rem;
+    }
+    .consultation-footer-content-wrapper .consultation-footer-content p {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 600px;
+        margin: 1.75rem auto;
+    }
+}

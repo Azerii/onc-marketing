@@ -1,0 +1,55 @@
+/* external css: flickity.css */
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+.carousel-cell {
+  width: 100%;
+  margin-right: 2rem;
+}
+
+  .flickity-page-dots {
+    display: none;
+  }
+
+  .flickity-button {
+    background: #333;
+  }
+  .flickity-button:hover {
+    background: #5BAB2F;
+  }
+  
+  .flickity-prev-next-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+  }
+  /* icon color */
+  .flickity-button-icon {
+    fill: white;
+  }
+  /* position outside */
+  .flickity-prev-next-button.previous {
+    left: -40px;
+  }
+  .flickity-prev-next-button.next {
+    right: -40px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .flickity-prev-next-button.previous {
+      left: -10px;
+    }
+    .flickity-prev-next-button.next {
+      right: -10px;
+    }
+    .flickity-viewport {
+      width: 100%;
+    }
+    .carousel-cell {
+      margin-right: 0;
+    }
+  }
+  

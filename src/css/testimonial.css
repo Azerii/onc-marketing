@@ -1,0 +1,125 @@
+.testimonial {
+    width: 100%;
+    padding: 5rem 0;
+}
+
+.testimonial .inner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+    padding-bottom: 7rem;
+    background: linear-gradient(to right, rgba(88, 172, 48, 1), rgba(110, 187, 62, 1) 40%, rgba(150, 213, 88, 1) 80%);
+    color: #ffffff;
+    text-align: left;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.testimonial .inner p {
+    margin: 0;
+}
+
+.testimonial .inner .content-left {
+    width: 15%;
+}
+
+.testimonial .inner .content-left .contour {
+    position: absolute;
+    top: -3rem;
+    left: -7rem;
+    width: 60%;
+    z-index: 1;
+}
+
+.testimonial .inner .content-left .avatar {
+    position: relative;
+    width: 80%;
+}
+
+.testimonial .inner .content-right {
+    position: relative;
+    width: 45%;
+}
+
+.testimonial .inner .content-right .title {
+    font-weight: 700;
+    margin-bottom: 3rem;
+    margin-left: 3rem;
+}
+
+.testimonial .inner .content-right .quotes {
+    position: absolute;
+    top: 0.5rem;
+    left: 0;
+    width: 2.5rem;
+}
+
+.testimonial .inner .content-right .testimonial-text {
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+}
+
+.testimonial .inner .content-right .name {
+    font-weight: 600;
+    margin-left: 3rem;
+}
+
+.testimonial .inner .content-right .role {
+    margin-left: 3rem;
+}
+
+.mb {
+    display: none !important;
+}
+
+@media screen and (max-width: 768px) {
+    .lg {
+        display: none !important;
+    }
+    .mb {
+        display: flex !important;
+    }
+    .testimonial .inner {
+        background: linear-gradient(to bottom, rgba(88, 172, 48, 1), rgba(110, 187, 62, 1) 40%, rgba(150, 213, 88, 1) 80%);
+        padding: 2.5rem 0;
+        width: 90%;
+        margin: auto;
+        border-radius: 1rem;
+    }
+    .testimonial .inner .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .testimonial .inner .content .title {
+        font-weight: 700;
+        margin-bottom: 2rem;
+    }
+    .testimonial .inner .content .avatar {
+        width: 50%;
+        margin-bottom: 2rem;
+    }
+    .testimonial .inner .content .quotes {
+        position: absolute;
+        width: 2rem;
+        left: 1.8rem;
+        top: 34%;
+    }
+    .testimonial .inner .content .contour {
+        position: absolute;
+        top: 30%;
+        left: -50%;
+        width: 120%;
+        z-index: 1;
+    }
+    .testimonial .inner .content .name {
+        align-self: flex-start;
+        font-weight: 600;
+        margin-top: 1rem;
+    }
+    .testimonial .inner .content .role {
+        align-self: flex-start;
+    }
+}

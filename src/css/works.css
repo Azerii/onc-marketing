@@ -1,0 +1,139 @@
+.works {
+    width: 100%;
+    padding: 3rem 0;
+    overflow: hidden;
+}
+
+.works .header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.works .inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10rem;
+}
+
+.img-wrapper {
+    width: 50%;
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+}
+
+.contour {
+    position: absolute;
+    z-index: -1;
+    width: 160%;
+}
+
+.contour.left {
+    top: -40%;
+    left: -80%;
+}
+
+.contour.right {
+    top: -20%;
+    right: -80%;
+}
+
+.mockup {
+    width: 70%;
+}
+
+.img-wrapper.right {
+    justify-content: flex-end;
+}
+
+.content {
+    display: flex;
+    width: 50%;
+    text-align: left;
+}
+
+.text-wrapper h2 {
+    font-weight: 700;
+}
+
+.content-list-item {
+    display: flex;
+}
+
+.content-ring {
+    height: 2rem;
+    width: 2rem;
+    border: 0.4rem solid #5BAB2F;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.content-btn-wrapper {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.content-btn-wrapper button {
+    border: none;
+    padding: 0.5rem 1.5rem;
+    background-color: #5BAB2F;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.mb {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .lg {
+        display: none;
+    }
+    .mb {
+        display: flex;
+    }
+    .works .header h1 {
+        font-size: 160%;
+    }
+    .works .inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 7rem;
+    }
+    .content {
+        width: 80%;
+        margin-bottom: 5rem;
+    }
+    .img-wrapper {
+        width: 80%;
+        margin-bottom: 5rem;
+    }
+    .mockup {
+        width: 100%;
+    }
+    .contour {
+        width: 190%;
+    }
+    .contour.left {
+        top: -30%;
+        left: -90%;
+    }
+    .contour.right {
+        top: -10%;
+        right: -90%;
+    }
+    .text-wrapper h2 {
+        font-size: 130%;
+    }
+    .text-wrapper p {
+        font-size: 80%;
+    }
+    .content-ring {
+        height: 1.5rem;
+        width: 1.5rem;
+        border: 0.3rem solid #5BAB2F;
+    }
+}

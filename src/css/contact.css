@@ -1,0 +1,143 @@
+.contact-wrapper {
+    width: 100%;
+    padding: 7rem 0;
+}
+
+.contact-inner {
+    display: flex;
+    box-shadow: 0px 3px 10px #c9c9c9;
+}
+
+.contact-left {
+    background-image: url(../assets/contact_background.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50%;
+    padding: 3rem 2rem;
+    height: 50rem;
+}
+
+.contact-left .title h1 {
+    color: #ffffff;
+    font-size: 3rem;
+}
+
+.contact-left .details {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.contact-left .details a {
+    color: #ffffff;
+    line-height: 1.3rem;
+}
+
+.contact-left .details img {
+   width: 1.5rem;
+   height: auto;
+   margin-right: 1rem;
+}
+
+.contact-right {
+    background-color: #ffffff;
+    width: 50%;
+    padding: 3rem 0rem;
+    padding-bottom: 0;
+}
+
+.contact-right .title h1 {
+    font-size: 3rem;
+}
+
+.contact-right form {
+    margin-top: 2rem;
+}
+
+.contact-right .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.contact-right .form-group p {
+    margin-bottom: 0.5rem;
+}
+
+.contact-right .form-group input {
+    width: 95%;
+    height: 4rem;
+    padding-left: 1rem;
+    border: 1px solid #D5CFCF;
+    border-radius: 0.3rem;
+}
+
+.contact-right .form-group input:focus, .contact-right .form-group textarea:focus {
+    outline: none
+}
+
+.contact-right .form-group textarea {
+    width: 95%;
+    height: 10rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    border: 1px solid #D5CFCF;
+    border-radius: 0.3rem;
+}
+
+::placeholder {
+    color: #D5CFCF;
+}
+
+.contact-right .consultation-btn-wrapper {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.contact-right .form-group button {
+    width: 95%;
+    background-color: #5BAB2F;
+    border: none;
+}
+
+.contact-right .form-group button:hover {
+    background-color: #5BAB2F !important;
+    filter: brightness(1.2);
+}
+
+.contact-right .form-group button:focus {
+    outline: none !important;
+}
+
+@media screen and (max-width: 767.89px) {
+    .contact-wrapper {
+        padding: 3rem 0;
+    }
+    .contact-left {
+        display: none;
+    }
+    .contact-right {
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+    .contact-right .title h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .contact-right .form-group textarea, .contact-right .form-group input, .contact-right .form-group button {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .contact-left {
+        display: none;
+    }
+    .contact-right {
+        width: 100%;
+        padding: 2rem 5rem;
+    }
+    .contact-right .title h1 {
+        text-align: center;
+    }
+    .contact-right .form-group textarea, .contact-right .form-group input, .contact-right .form-group button {
+        width: 100%;
+    }
+}

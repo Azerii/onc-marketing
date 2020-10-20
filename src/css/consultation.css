@@ -1,0 +1,113 @@
+.consultation-wrapper {
+    margin-top: 7rem;
+    padding-bottom: 5rem;
+}
+
+.consultation-header {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    padding: 1rem;
+    padding-bottom: 0rem;
+}
+
+.consultation-header img {
+    height: 3rem;
+    width: auto;
+}
+
+.consultation-container {
+    padding: 3rem 5rem;
+    margin-top: 2rem;
+    width: 60%;
+    box-shadow: 0px 3px 5px #c9c9c9;
+}
+
+.consultation-container .title h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    color: #333;
+    text-align: center;
+}
+
+.consultation-container .form-group {
+    margin-bottom: 2rem;
+}
+
+.consultation-container input, .consultation-container textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #c9c9c9;
+    border-radius: 5px;
+}
+
+.consultation-btn-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.consultation-btn-wrapper button {
+    background-color: #59AC30;
+    font-size: 1.3rem;
+    border: none;
+    width: 100%;
+}
+
+.consultation-btn-wrapper button:focus, .consultation-btn-wrapper button:hover, .consultation-btn-wrapper button:active {
+    outline: none;
+    box-shadow: none;
+    filter: contrast(1.2);
+    background-color: #59AC30 !important;
+}
+
+.consultation-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 240, 245, 0.5);
+}
+
+.consultation-footer a {
+    color: #8d8d8d;
+}
+
+.consultation-footer-content-wrapper {
+    width: 50%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.consultation-footer-content-wrapper .consultation-footer-content p {
+    font-size: 1.3rem;
+    margin-bottom: 0;
+    color: #4f4f4f;
+}
+
+@media screen and (max-width: 1024px) {
+    .consultation-wrapper {
+        margin-top: 5rem;
+    }
+    .consultation-wrapper img {
+        height: 2rem;
+    }
+    .consultation-container {
+        width: 90%;
+        padding: 0.7rem;
+        margin-top: 3rem;
+    }
+    .consultation-container .title h1 {
+        font-size: 1.7rem;
+        margin: 1.5rem 0;
+    }
+    .consultation-footer-content-wrapper {
+        width: 90%;
+        height: 3rem;
+    }
+    .consultation-footer-content-wrapper .consultation-footer-content p {
+        font-size: 1rem;
+    }
+}

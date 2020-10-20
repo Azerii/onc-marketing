@@ -1,0 +1,115 @@
+.top-caption {
+    width: 100%;
+    /* background: linear-gradient(to right, rgba(88, 172, 48, 1), rgba(110, 187, 62, 1) 40%, rgba(150, 213, 88, 1) 80%); */
+    background: linear-gradient(to right, #59AC30, #69B246, #7AC246 50%, #8ECF53 60%, #96D457 90%);
+}
+
+.top-caption .inner .header {
+    padding: 2rem 0;
+}
+
+.top-caption .inner .header img {
+    height: 2.5rem;
+}
+
+.top-caption .inner .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.top-caption .inner .caption-text {
+    color: #ffffff;
+}
+
+.top-caption .inner .caption-text h1 {
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.top-caption .inner .caption-text p {
+    margin-bottom: 2rem;
+    font-size: 150%;
+}
+
+.top-caption .inner .caption-text button {
+    border: none;
+    background-color: #ffffff;
+    color: rgba(88, 172, 48, 1);
+    width: 50%;
+    padding: 0.5rem 0;
+    font-size: 150%;
+    border-radius: 0.3rem;
+}
+
+.top-caption .inner .caption-img {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.top-caption .inner .caption-img img {
+    width: 80%;
+}
+
+.wave-wrapper {
+    width: 100%;
+    margin-top: 2rem;
+    background-color: #ffffff;
+}
+
+.wavy-border-mb {
+    display: none;
+}
+
+.wavy-border-lg {
+    width: 100%;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .top-caption {
+        background: linear-gradient(to bottom, rgba(88, 172, 48, 1), rgba(110, 187, 62, 1) 40%, rgba(150, 213, 88, 1) 80%);
+    }
+    .top-caption .inner .content-wrapper {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1rem;
+    }
+    .top-caption .inner .header img {
+        height: 2rem;
+    }
+    .top-caption .inner .caption-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .top-caption .inner .caption-text h1 {
+        font-size: 160%;
+    }
+    .top-caption .inner .caption-text p {
+        font-size: 100%;
+    }
+    .top-caption .inner .caption-text button {
+        width: 70%;
+    }
+    .top-caption .inner .caption-img {
+        width: 100%;
+        margin-top: 3rem;
+    }
+    .top-caption .inner .caption-img img {
+        width: 60%;
+    }
+    .wavy-border-mb {
+        display: block;
+        width: 100%;
+    }
+    .wavy-border-lg {
+        display: none;
+    }
+}
+
