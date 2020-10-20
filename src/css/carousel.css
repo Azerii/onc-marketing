@@ -15,10 +15,10 @@
   }
 
   .flickity-button {
-    background: #333;
+    background: #ffffff;
   }
   .flickity-button:hover {
-    background: #5BAB2F;
+    background: transparent;
   }
   
   .flickity-prev-next-button {
@@ -28,7 +28,7 @@
   }
   /* icon color */
   .flickity-button-icon {
-    fill: white;
+    fill: #707070;
   }
   /* position outside */
   .flickity-prev-next-button.previous {

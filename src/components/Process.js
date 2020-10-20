@@ -17,19 +17,19 @@ export default function Process() {
             <div className='container inner'>
                 <div className='process-item'>
                     <img className='item-img' src={organise} alt='' />
-                    <img className='arrow arrow-1' src={arrow_right} alt='' />
+                    <img className='process-arrow arrow-1' src={arrow_right} alt='' />
                     <h4>Organize</h4>
                     <p>For us, every project starts at the organization stage. It’s where we sit back, research, understand industry trends, and formulate the best-suited strategy and concept as it aligns with your brand’s most fundamental values. </p>
                 </div>
                 <div className='process-item'>
                     <img className='item-img' src={design} alt='' />
-                    <img className='arrow arrow-2' src={arrow_right} alt='' />
+                    <img className='process-arrow arrow-2' src={arrow_right} alt='' />
                     <h4>Design</h4>
                     <p>We understand that, more than anything, building websites is based on the rules of coding. But then, we take these rules, coupled with a flair for aesthetics and create a website that beats anything you can think of.</p>
                 </div>
                 <div className='process-item'>
                     <img className='item-img' src={development} alt='' />
-                    <img className='arrow arrow-3' src={arrow_right} alt='' />
+                    <img className='process-arrow arrow-3' src={arrow_right} alt='' />
                     <h4>Development</h4>
                     <p>We know that the most important thing for your website is not just how good it looks but how well it works. This is how to reach your ultimate objective: leads, traffic, sales, and more. </p>
                 </div>

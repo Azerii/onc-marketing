@@ -33,7 +33,7 @@
     margin-bottom: 2rem;
 }
 
-.arrow {
+.process-arrow {
     position: absolute;
     width: 7rem;
     top: 20%;
@@ -54,7 +54,7 @@
         width: 80%;
         margin-bottom: 3rem;
     }
-    .arrow {
+    .process-arrow {
         display: none;
     }
 }
