@@ -58,9 +58,6 @@ export default function Modal() {
                                         <p>Message</p>
                                         <textarea type="text" minLength="2" id="message" name="message" placeholder="Tell us a bit bout your business" required />
                                     </div>
-                                    <div style={{height:'0.1rem', visibility: 'hidden'}}>
-                                        <input type="text" id="request_call" name="request_call" value={`${current}/Swiftbranding`} style={{height:'0.1rem'}} required readOnly  />
-                                    </div>
                                     
                                     <div className="form-group consultation-btn-wrapper">
                                         <button type="submit" className="btn btn-primary" >Request a quote</button>
