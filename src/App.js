@@ -1,30 +1,18 @@
 import React from 'react';
 import './App.css';
-import Brands from './components/Brands';
-import Services from './components/Services';
-import OurWorks from './components/OurWorks';
-import Sectors from './components/Sectors';
-import Process from './components/Process';
-import Testimonial from './components/Testimonial';
-import ContactForm from './components/ContactForm';
-import TopCaption from './components/TopCaption';
-import Carousel from './components/Carousel';
-import Modal from './components/Modal';
+
+import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom'
+import Home from './pages/Home';
+import ThankYou from './pages/ThankYou';
 
 function App() {
   return (
-    <div className="App">
-      <Modal />
-      <TopCaption />
-      <Brands />
-      <Services />
-      <OurWorks />
-      <Sectors />
-      {/* <Carousel /> */}
-      <Process />
-      <Testimonial />
-      <ContactForm />
-    </div>
+    <Router>
+      <div className="App">
+        <Route exact path='/' component={Home} />
+        <Route exact path='/thank-you' component={ThankYou} />
+      </div>
+    </Router>
   );
 }
 

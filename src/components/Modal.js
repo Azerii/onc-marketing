@@ -38,7 +38,10 @@ export default function Modal() {
                     <div className="modal-body">
                         <div className='modal-consultation-wrapper'>
                             <div className='modal-container'>
-                                <form onSubmit={(e) => {return}}>
+                                <form onSubmit={(e) => {
+                                        e.preventDefault()
+                                        window.location.replace('/thank-you')
+                                    }}>
                                     <div className="form-group">
                                         <p>Full Name</p>
                                         <input type="text" minLength="2" id="name" name="name" placeholder="e.g. Adekunle Ciroma" required />

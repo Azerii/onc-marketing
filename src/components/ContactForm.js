@@ -35,7 +35,10 @@ export default function ContactForm() {
                         <div className='title'>
                             <h1>Get in touch with us</h1>
                         </div>
-                        <form onSubmit={(e) => {return}}>
+                        <form onSubmit={(e) => {
+                                e.preventDefault()
+                                window.location.replace('/thank-you')
+                            }}>
                             <div className="form-group">
                                 <p>Full Name</p>
                                 <input type="text" minLength="2" id="name" name="name" placeholder="e.g. Adekunle Ciroma" required />
