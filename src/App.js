@@ -10,7 +10,10 @@ function App() {
     <Router>
       <div className="App">
         <Route exact path='/' component={Home} />
+        <Route exact path='/home' component={Home} />
+        <Route exact path='home' component={Home} />
         <Route exact path='/thank-you' component={ThankYou} />
+        <Route path='thank-you' component={ThankYou} />
       </div>
     </Router>
   );
