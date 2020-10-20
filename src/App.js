@@ -7,13 +7,10 @@ import ThankYou from './pages/ThankYou';
 
 function App() {
   return (
-    <Router>
+    <Router basename={'/website-development'}>
       <div className="App">
-        <Route exact path='/' component={Home} />
-        <Route exact path='/home' component={Home} />
-        <Route exact path='home' component={Home} />
-        <Route exact path='/thank-you' component={ThankYou} />
-        <Route exact path='thank-you' component={ThankYou} />
+        <Route exact path={`${process.env.PUBLIC_URL}/`} component={Home} />
+        <Route exact path={`${process.env.PUBLIC_URL}/thank-you`} component={ThankYou} />
       </div>
     </Router>
   );
