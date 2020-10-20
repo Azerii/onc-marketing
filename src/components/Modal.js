@@ -40,7 +40,7 @@ export default function Modal() {
                             <div className='modal-container'>
                                 <form onSubmit={(e) => {
                                         e.preventDefault()
-                                        window.location.replace('/thank-you')
+                                        window.location.replace(`https://oncmarketing.com/website-development/thank-you`)
                                     }}>
                                     <div className="form-group">
                                         <p>Full Name</p>

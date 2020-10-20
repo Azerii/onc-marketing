@@ -9,8 +9,8 @@ function App() {
   return (
     <Router basename={'/website-development'}>
       <div className="App">
-        <Route exact path={`${process.env.PUBLIC_URL}/`} component={Home} />
-        <Route exact path={`${process.env.PUBLIC_URL}/thank-you`} component={ThankYou} />
+        <Route exact path={`https://oncmarketing.com/website-development/`} component={Home} />
+        <Route exact path={`https://oncmarketing.com/website-development/thank-you`} component={ThankYou} />
       </div>
     </Router>
   );
