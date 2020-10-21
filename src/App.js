@@ -7,10 +7,10 @@ import ThankYou from './pages/ThankYou';
 
 function App() {
   return (
-    <Router basename={'/website-development'}>
+    <Router>
       <div className="App">
-        <Route exact path={`https://oncmarketing.com/website-development/`} component={Home} />
-        <Route exact path={`https://oncmarketing.com/website-development/thank-you`} component={ThankYou} />
+        <Route exact path='https://oncmarketing.com/website-development/' component={Home} />
+        <Route exact path='https://oncmarketing.com/website-development/thank-you' component={ThankYou} />
       </div>
     </Router>
   );
