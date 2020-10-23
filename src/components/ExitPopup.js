@@ -1,22 +1,30 @@
 import React from 'react'
+
 import '../css/modal.css'
 import '../css/consultation.css'
+import '../css/exit_popup.css'
 
-export default function Modal() {
+export default function ExitPopup() {
     
     return (
 
         // Modal
-        <div className="modal fade" id="exampleModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div id='exit-popup' className='exit-popup show'>
             <div className="modal-dialog modal-dialog-centered" role="document">
                 <div className="modal-content">
                     <div className="modal-header">
                         {/* <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> */}
-                        <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                        <button type="button" className='close' onClick={() => {
+                            document.querySelector('#exit-popup').classList.remove('show')
+                        }}>
                         <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div className="modal-body">
+                        <div className='title-wrapper'>
+                            <h5 className='title'>GET A CORPORATE WORDPRESS WEBSITE</h5>
+                            <p className='subtitle'>Starting From <span>£300</span></p>
+                        </div>
                         <div className='modal-consultation-wrapper'>
                             <div className='modal-container'>
                                 <form onSubmit={(e) => {
@@ -40,7 +48,7 @@ export default function Modal() {
                                         <textarea type="text" minLength="2" id="message" name="message" placeholder="Tell us a bit bout your business" required />
                                     </div>
                                     <div style={{height:'0.1rem', visibility: 'hidden'}}>
-                                        <input type="text" name="request_quote" value='request quote modal' style={{height:'0.1rem'}} required readOnly/>
+                                        <input type="text" name="exit_popup" value='exit_popup' style={{height:'0.1rem'}} required readOnly/>
                                     </div>
                                     
                                     <div className="form-group consultation-btn-wrapper">

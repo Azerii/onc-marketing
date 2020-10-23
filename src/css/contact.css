@@ -64,7 +64,7 @@
 .contact-right .form-group input {
     width: 95%;
     height: 4rem;
-    padding-left: 1rem;
+    padding: 1rem;
     border: 1px solid #D5CFCF;
     border-radius: 0.3rem;
 }
@@ -76,8 +76,7 @@
 .contact-right .form-group textarea {
     width: 95%;
     height: 10rem;
-    padding-left: 1rem;
-    padding-top: 1rem;
+    padding: 1rem;
     border: 1px solid #D5CFCF;
     border-radius: 0.3rem;
 }
@@ -116,6 +115,7 @@
     .contact-right {
         width: 100%;
         padding: 2rem 1rem;
+        padding-bottom: 1rem;
     }
     .contact-right .title h1 {
         font-size: 1.5rem;
@@ -123,6 +123,9 @@
     }
     .contact-right .form-group textarea, .contact-right .form-group input, .contact-right .form-group button {
         width: 100%;
+    }
+    .contact-right .form-group input {
+        height: 3rem;
     }
 }
 

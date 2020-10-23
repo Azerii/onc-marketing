@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React from 'react'
 
 import '../css/contact.css'
 import phone_icon from '../assets/phone_icon.svg'
@@ -7,12 +7,6 @@ import location_icon from '../assets/location_icon.svg'
 
 export default function ContactForm() {
     
-
-    
-
-    const urlArray = window.location.href.split('/') // get the current page title
-    const urlArrayLength = urlArray.length
-    const current = urlArray[urlArrayLength - 2]
     return (
         <div id='contact-us' className='contact-wrapper'>
             <div className='container'>
@@ -22,7 +16,7 @@ export default function ContactForm() {
                             <h1>Contact us</h1>
                         </div>
                         <div className='details'>
-                            <img className='icon' src={phone_icon} alt='' /><a href='tel:+44 7531 508892'>+44 7531 508892</a>
+                            <img className='icon' src={phone_icon} alt='' /><a href='tel:+44 7961486496'>+44 7961486496</a>
                         </div>
                         <div className='details'>
                             <img className='icon' src={mail_icon} alt='' /><a href='mailto:info@oncmarketing.com'>info@oncmarketing.com</a>
@@ -37,7 +31,7 @@ export default function ContactForm() {
                         </div>
                         <form onSubmit={(e) => {
                                 e.preventDefault()
-                                window.location.replace(`https://oncmarketing.com/website-development/thank-you`)
+                                window.location.replace(`https://oncmarketing.com/website-development/thankyou.html`)
                             }}>
                             <div className="form-group">
                                 <p>Full Name</p>
@@ -54,6 +48,9 @@ export default function ContactForm() {
                             <div className="form-group">
                                 <p>Message</p>
                                 <textarea type="text" minLength="2" id="message" name="message" placeholder="e.g. I need a rebrand for my business" required />
+                            </div>
+                            <div style={{height:'0.1rem', visibility: 'hidden'}}>
+                                <input type="text" id="contact" name="contact" value='contact us' style={{height:'0.1rem'}} required readOnly/>
                             </div>
                             <div className="form-group consultation-btn-wrapper">
                                 <button type="submit" className="btn btn-primary" >Send</button>

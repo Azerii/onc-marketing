@@ -39,7 +39,7 @@
 }
 
 .modal-container .form-group {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .modal-container input, .modal-container textarea {
@@ -124,6 +124,9 @@
     }
     .consultation-footer-content-wrapper .consultation-footer-content p {
         font-size: 1rem;
+    }
+    .modal-container .form-group {
+        margin-bottom: 0.8rem;
     }
 }
 

@@ -1,0 +1,29 @@
+.exit-popup {
+    display: none;
+}
+
+.exit-popup.show {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 2344345;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 90% !important;
+}
+
+.title-wrapper {
+    width: 80%;
+    margin: auto;
+}
+
+.title-wrapper .subtitle {
+    color: #707070;
+}
+
+.title-wrapper .subtitle span {
+    font-weight: 600;
+    color: #4f4f4f;
+}

@@ -9,11 +9,12 @@ import Testimonial from '../components/Testimonial';
 import ContactForm from '../components/ContactForm';
 import TopCaption from '../components/TopCaption';
 import Modal from '../components/Modal';
+import Header from '../components/Header';
 
 export default function Home() {
   return (
     <React.Fragment>
-      <Modal />
+      <Header />
       <TopCaption />
       <Brands />
       <Services />
@@ -22,6 +23,7 @@ export default function Home() {
       <Process />
       <Testimonial />
       <ContactForm />
+      <Modal />
     </React.Fragment>
   );
 }

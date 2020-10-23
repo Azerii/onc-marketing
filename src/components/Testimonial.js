@@ -3,7 +3,7 @@ import React from 'react'
 import '../css/testimonial.css'
 
 import contour from '../assets/contour_white.svg'
-import avatar from '../assets/avatar.svg'
+import avatar from '../assets/kamos_fav.png'
 import quotes from '../assets/quotes.svg'
 
 export default function Testimonial() {
@@ -17,9 +17,9 @@ export default function Testimonial() {
                 <div className='content-right'>
                     <p className='title'>Testimonial from our partner </p>
                     <img className='quotes' src={quotes} alt='' />
-                    <p className='testimonial-text'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna tempor invidunt ut labore et dolore magna tempor invidunt ut labore et dolore magna</p>
-                    <p className='name'>Lorem Ipsum</p>
-                    <p className='role'>lorem ipsum</p>
+                    <p className='testimonial-text'>Exceptional service!! From initial contact to completion, ONC Marketing exuded professionalism and total transparency to ensure our company's re-brand and website development were highly successful. Definitely look forward to working with you again.​</p>
+                    <p className='name'>Deinde Oloruntobi</p>
+                    <p className='role'>CEO K. Amos &amp; Co</p>
                 </div>
             </div>
 
@@ -32,9 +32,9 @@ export default function Testimonial() {
 
                     <img className='quotes' src={quotes} alt='' />
 
-                    <p className='testimonial-text'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna tempor invidunt ut labore et dolore magna tempor invidunt ut labore et dolore magna</p>
-                    <p className='name'>Lorem Ipsum</p>
-                    <p className='role'>lorem ipsum</p>
+                    <p className='testimonial-text'>Exceptional service!! From initial contact to completion, ONC Marketing exuded professionalism and total transparency to ensure our company's re-brand and website development were highly successful. Definitely look forward to working with you again.​</p>
+                    <p className='name'>Deinde Oloruntobi</p>
+                    <p className='role'>CEO K. Amos &amp; Co</p>
                 </div>
             </div>
         </div>

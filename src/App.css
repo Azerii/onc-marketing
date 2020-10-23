@@ -12,3 +12,11 @@ button:hover {
   background-color: #95D356 !important;
   color: #ffffff !important;
 }
+
+a, a:hover {
+  text-decoration: none;
+}
+
+::placeholder {
+  font-size: 90%;
+}
